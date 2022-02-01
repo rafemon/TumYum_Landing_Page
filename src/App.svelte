@@ -38,17 +38,29 @@
 		flex-direction: column; 
 		justify-content: center;
 		align-items: center; 
-		padding-top: 110px;
-		flex-wrap: wrap; 
-		background-image: url('assets/background2.jpg');
+		padding-top: 20%;
+		flex-wrap: wrap;
+		position: relative;  
+	}
+
+	.appInformation::before {
+		content: ""; 
+		background: linear-gradient(rgba(54, 59, 61, 0.8), rgba(54, 59, 61, 0.8)), url('assets/background.jpg');
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: 55% 20%;
 		background-size: cover;
+		position: absolute; 
+		border-radius: 0px 0px 40px 40px; 
+		top: 0px; 
+		right: 0px; 
+		bottom: 0px; 
+		left: 0px; 
 	}
 
 	.appIcon {
 		width: 120px;
 		height: 120px;
+		position: relative;
 	}
 
 	.appName {
@@ -56,19 +68,23 @@
 		text-align: center;
 		color: #C2EB99;
 		font-size: 3rem; 
+		-webkit-text-stroke: 2px black;
+		position: relative;
 	}
 
 	.appDescription {
-		font-family: 'Playfull'; 
+		font-family: 'playfull'; 
 		text-align: center;
-		color: #db10ca;
+		color: #ecd3fa;
 		font-size: 2rem; 
+		position: relative;
 	}
 
 	.interestForm {
 		display: flex;
 		margin-top: 42px;
-		height: 60px;
+		height: 20%;
+		position: relative;
 	}
 
 	.footer {
@@ -78,6 +94,7 @@
 		flex-direction: row;
 		justify-content: center; 
 		align-content: flex-end;
+		position: relative;
 	}
 
 	.privacyPolicy {
@@ -91,8 +108,8 @@
 }	
 
 @font-face {
-	font-family: 'Playfull';
-	src: url('/build/assets/Playfull.ttf') format('ttf');
+	font-family: 'playfull';
+	src: url('/build/assets/playfull.otf') format('otf');
 }
 
 </style>

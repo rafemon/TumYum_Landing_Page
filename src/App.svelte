@@ -11,7 +11,8 @@
 			<h1>TumYum</h1>
 		</div>
 		<div class="appDescription">
-			<p>tap into your local food scene</p>
+			<p>Tap into your local food scene</p>
+
 		</div>
 		<div class="interestForm">
 			<a class="typeform" href="https://za1e6wwbj28.typeform.com/to/yy4moyuj"><img class ="betaTestImg" alt="betaSignUp" src="/build/assets/beta-sign-up.png"></a>
@@ -41,13 +42,16 @@
 		padding-top: 20%;
 		flex-wrap: wrap;
 		position: relative;  
+		margin: 0px; 
+		height: 100vh;
+		box-sizing: border-box; 
 	}
 
 	.appInformation::before {
 		content: ""; 
 		background: linear-gradient(rgba(54, 59, 61, 0.8), rgba(54, 59, 61, 0.8)), url('assets/background.jpg');
 		background-repeat: no-repeat;
-		background-position: 55% 20%;
+		background-position: center;
 		background-size: cover;
 		position: absolute; 
 		border-radius: 0px 0px 40px 40px; 
@@ -55,6 +59,7 @@
 		right: 0px; 
 		bottom: 0px; 
 		left: 0px; 
+		backdrop-filter: blur(10px);
 	}
 
 	.appIcon {
@@ -82,7 +87,7 @@
 
 	.interestForm {
 		display: flex;
-		margin-top: 42px;
+		margin-top: 5%;
 		height: 20%;
 		position: relative;
 	}

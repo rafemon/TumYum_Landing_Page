@@ -4,7 +4,7 @@
 <head>
 	<script src="https://kit.fontawesome.com/eb06444889.js" crossorigin="anonymous"></script>
 </head>
-<main>
+<body> 
 	<div class="appInformation">
 		<img class="appIcon" alt="logo" src="/build/assets/logo_rounded.png">
 		<div class="appName">
@@ -30,9 +30,15 @@
 			</div>
 		</section>
 	</div>
-</main>
+</body>
 
 <style>
+
+	* {
+		margin: 0;
+		padding: 0; 
+		box-sizing: border-box;
+	}
 
 	.appInformation {
 		display: flex;
@@ -42,9 +48,9 @@
 		padding-top: 20%;
 		flex-wrap: wrap;
 		position: relative;  
-		margin: 0px; 
 		height: 100vh;
-		box-sizing: border-box; 
+		flex-grow: 1; 
+
 	}
 
 	.appInformation::before {
@@ -59,12 +65,12 @@
 		right: 0px; 
 		bottom: 0px; 
 		left: 0px; 
-		backdrop-filter: blur(10px);
+		padding: 0px; 
 	}
 
 	.appIcon {
-		width: 120px;
-		height: 120px;
+		width: 180px;
+		height: 180px;
 		position: relative;
 	}
 
@@ -75,6 +81,7 @@
 		font-size: 3rem; 
 		-webkit-text-stroke: 2px black;
 		position: relative;
+		margin-top: 5%;
 	}
 
 	.appDescription {
@@ -83,12 +90,13 @@
 		color: #ecd3fa;
 		font-size: 2rem; 
 		position: relative;
+		margin-top: 3%;
 	}
 
 	.interestForm {
-		display: flex;
-		margin-top: 5%;
-		height: 20%;
+		display: flex; 
+		margin-top: auto;
+		height: auto;
 		position: relative;
 	}
 

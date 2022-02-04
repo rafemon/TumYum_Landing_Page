@@ -2,6 +2,8 @@
 </script>
 
 <head>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<title>TumYum</title>
 	<script src="https://kit.fontawesome.com/eb06444889.js" crossorigin="anonymous"></script>
 </head>
 <body> 
@@ -18,23 +20,23 @@
 			<a class="typeform" href="https://za1e6wwbj28.typeform.com/to/yy4moyuj"><img class ="betaTestImg" alt="betaSignUp" src="/build/assets/beta-sign-up.png"></a>
 		</div>
 	</div>
-	<div class="footer">
+	<footer>
 		<section class="social">
 			<div class="socialIcons">
-				<a href="https://www.instagram.com/tumyumapp/"><i class="fab fa-instagram fa-3x"></i></a>
-				<a href="https://discord.gg/QUfFAX9X"><i class="fab fa-discord fa-3x"></i></a>
+				<a href="https://www.instagram.com/tumyumapp/"><i class="fab fa-instagram-square fa-3x"></i></a>
+				<a href="https://discord.gg/75Ajsq29"><i class="fab fa-discord fa-3x"></i></a>
 				<a href="https://www.youtube.com/channel/UCm0tWiLs05bMl0Lv8bkj-bw"><i class="fab fa-youtube fa-3x"></i></a>
 			</div>
 			<div class="privacyPolicy">
 				<a href="https://www.termsfeed.com/live/cd5b92d8-3c69-400f-a9ac-be8020b4be6a">Privacy</a>
 			</div>
 		</section>
-	</div>
+	</footer>
 </body>
 
 <style>
 
-	* {
+	*, body, html {
 		margin: 0;
 		padding: 0; 
 		box-sizing: border-box;
@@ -42,20 +44,16 @@
 
 	.appInformation {
 		display: flex;
-		flex-direction: column; 
+		flex-direction: column;
 		justify-content: center;
-		align-items: center; 
-		padding-top: 20%;
-		flex-wrap: wrap;
-		position: relative;  
+		align-items: center;
+		position: relative; 
 		height: 100vh;
-		flex-grow: 1; 
-
 	}
 
 	.appInformation::before {
 		content: ""; 
-		background: linear-gradient(rgba(54, 59, 61, 0.8), rgba(54, 59, 61, 0.8)), url('assets/background.jpg');
+		background: linear-gradient(rgba(54, 59, 61, 0.8), rgba(54, 59, 61, 0.8)), url('assets/background2.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -65,12 +63,14 @@
 		right: 0px; 
 		bottom: 0px; 
 		left: 0px; 
-		padding: 0px; 
+		margin: 0 0 0 0; 
 	}
 
 	.appIcon {
 		width: 180px;
 		height: 180px;
+		max-width: 100%;
+		max-height: 100%;
 		position: relative;
 	}
 
@@ -79,7 +79,7 @@
 		text-align: center;
 		color: #C2EB99;
 		font-size: 3rem; 
-		-webkit-text-stroke: 2px black;
+		-webkit-text-stroke: .1rem black;
 		position: relative;
 		margin-top: 5%;
 	}
@@ -90,18 +90,21 @@
 		color: #ecd3fa;
 		font-size: 2rem; 
 		position: relative;
-		margin-top: 3%;
+		margin-top: 5%;
 	}
 
-	.interestForm {
-		display: flex; 
-		margin-top: auto;
-		height: auto;
+	.betaTestImg {
+		max-width: 75%;
+		height: auto; 
+		display: block; 
+		margin-left: auto;
+		margin-right: auto;
 		position: relative;
+		margin-top: 20%;
 	}
 
-	.footer {
-		padding-top: 100px;
+	footer {
+		padding-top: 2%; 
 		display: flex; 
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -110,8 +113,15 @@
 		position: relative;
 	}
 
+	.fa-instagram-square, .fa-discord, .fa-youtube {
+		color: black;
+	}
+
 	.privacyPolicy {
 		text-align: center; 
+		font-size: 1.0rem; 
+		padding-top: 3%; 
+		padding-bottom: 7%;
 	}
 
 @font-face {
